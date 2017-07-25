@@ -7,6 +7,8 @@ The basic functionality allows the user to select a tile type and subtype from t
 
 In addition to being unmaintanable spaghetti code the original combined two concerns the construction of the tile and the end user behavior. 
 
+The first refactor just tries to separate out functionality and introduces the revealing module pattern to limit pollution of the global namespace and and some better structure
+
 The final refactor separates out the building from the end user interaction. It also uses proper namespacing.
 
 Lastly, for the enduser side I stick with jquery for end user effects and dom manipulation.  For the builder side went with vanilla javascript and opted for the OLOO " inheritance" (https://gist.github.com/getify/5572383) over traditional but flawed and jury rigged but widely accepted JavaScript inheritance.
